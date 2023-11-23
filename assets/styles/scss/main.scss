@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'variables';
+@import 'mixin';
+
+// NAVBAR
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  padding: 0.75rem 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  nav {
+    position: sticky;
+  }
+  &-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 50px;
+      border-radius: 14px;
+      pointer-events: none;
+    }
+  }
+  &-links {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      padding: 10px;
+      color: black;
+    }
+    &-tree {
+      padding-right: 20px;
+    }
+    &-join-btn {
+      @include buttonNoDefault();
+      @include buttonStyle();
+    }
+  }
+}
+
+// SLIDE
+.slide {
+  &-welcome-title{
+    margin: 4% 5% 0;
+    display: inline-flex;
+    align-items: baseline;
+    h1 {
+      font-weight: 700;
+      font-size: 60px;
+    }
+    &-time-n-date {
+      display: flex;
+      flex-direction: row;
+      padding-left: 20px;
+      align-items: baseline;
+      &-wrapper {
+        &-date {
+          padding-right: 5px;
+        }
+        &-time {
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+  &-news {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    img {
+      border-radius: $mediaBorderRadius;
+    }
+    &-big {
+      border-radius: $mediaBorderRadius;
+      width: 790px;
+      height: 444.375px;
+      background: url('../../imgs/news/prosperityday_thumbnail.png') no-repeat center;
+      background-size: cover;
+      transition: .4s;
+    }
+    &-small {
+      padding-left: 4px;
+      &-1 {
+        img {
+          width: 390px;
+        }
+      }
+      &-2 {
+        img {
+          width: 390px;
+        }
+      }
+    }
+  }
+}
+
+// SECTION
+.section {
+  margin: 4% 5%;
+  &-content{
+    #content-1 {
+      display: flex;
+      justify-content: space-around;
+      &-title {
+        &-header {
+          padding-bottom: 20px
+        }
+        &-btn {
+          @include buttonNoDefault();
+          @include buttonStyle();
+          display: flex;
+          align-items: center;
+          a {
+            padding-right: 7px;
+          }
+        }
+      }
+      video {
+        width: 500px;
+        border-radius: $mediaBorderRadius;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

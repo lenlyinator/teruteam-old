@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  padding: 0.75rem 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.navbar nav {
+  position: sticky;
+}
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-logo img {
+  width: 50px;
+  border-radius: 14px;
+  pointer-events: none;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+.navbar-links a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+.navbar-links-tree {
+  padding-right: 20px;
+}
+.navbar-links-join-btn {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background: black;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.navbar-links-join-btn a {
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slide-welcome-title {
+  margin: 4% 5% 0;
+  display: inline-flex;
+  align-items: baseline;
+}
+.slide-welcome-title h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+.slide-welcome-title-time-n-date {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  align-items: baseline;
+}
+.slide-welcome-title-time-n-date-wrapper-date {
+  padding-right: 5px;
+}
+.slide-welcome-title-time-n-date-wrapper-time {
+  font-weight: lighter;
+}
+.slide-news {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+}
+.slide-news img {
+  border-radius: 0.5rem;
+}
+.slide-news-big {
+  border-radius: 0.5rem;
+  width: 790px;
+  height: 444.375px;
+  background: url("../../imgs/news/prosperityday_thumbnail.png") no-repeat center;
+  background-size: cover;
+  transition: 0.4s;
+}
+.slide-news-small {
+  padding-left: 4px;
+}
+.slide-news-small-1 img {
+  width: 390px;
+}
+.slide-news-small-2 img {
+  width: 390px;
+}
+
+.section {
+  margin: 4% 5%;
+}
+.section-content #content-1 {
+  display: flex;
+  justify-content: space-around;
+}
+.section-content #content-1-title-header {
+  padding-bottom: 20px;
+}
+.section-content #content-1-title-btn {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background: black;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+.section-content #content-1-title-btn a {
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.section-content #content-1-title-btn a {
+  padding-right: 7px;
+}
+.section-content #content-1 video {
+  width: 500px;
+  border-radius: 0.5rem;
+}
+.section-content #content-1 a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

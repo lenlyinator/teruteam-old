@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="./assets/imgs/general/teru_team.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/styles/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <script src="./src/clock.js" defer></script>
+  <script src="./src/dataFormat.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeruTeam</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="/">
+        <img src="./assets/imgs/general/teru_team.ico" alt="TeruTeam's logo">
+      </a>
+    </div>
+    <div class="navbar-links">
+      <div class="navbar-links-tree">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Collabs</a>
+        <a href="#">About</a>
+      </div>
+      <button class="navbar-links-join-btn">
+        <a href="#">Join TeruTeam!</a>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SLIDE -->
+  <div class="slide">
+    <div class="slide-welcome-title">
+      <h1>Welcome!</h1>
+      <!-- TIME -->
+      <div class="slide-welcome-title-time-n-date">
+        <!-- DATE -->
+        <span class="slide-welcome-title-time-n-date-wrapper-date"> today is
+          <span id="date"></span>
+        </span>
+        <!-- CLOCK -->
+        <h3 class="slide-welcome-title-time-n-date-wrapper-clock">
+          <div class="clock">
+            <div id="time"></div>
+          </div>
+          <span></span>
+          <span></span>
+        </h3>
+      </div>
+    </div>
+    <div class="slide-news">
+      <!-- GENERAL -->
+      <a href="https://www.youtube.com/watch?v=4unAK3UPgnI" target="_blank">
+        <div class="slide-news-big">
+          <div class="slide-news-big-img">
+          </div>
+        </div>
+      </a>
+      <a href="">
+        <div class="slide-news-small">
+          <div class="slide-news-small-1">
+            <div class="slide-news-small-1-img">
+              <img src="./assets/imgs/general/unk.png" alt="slide-news-small-1">
+            </div>
+          </div>
+      </a>
+      <a href="">
+        <div class="slide-news-small-2">
+          <div class="slide-news-small-2-img">
+            <img src="./assets/imgs/general/unk.png" alt="slide-news-small-2">
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SECTION -->
+  <div class="section">
+    <div class="section-content">
+      <div id="content-1">
+        <div id="content-1-title">
+          <h2 id="content-1-title-header">The collab created the name TeruTeam</h2>
+          <button id="content-1-title-btn"><a href="#">See more collab </a> <i style="color: #fff;" class="bi bi-arrow-right-square-fill"></i></button>
+        </div>
+        <video src="./assets/vids/showcase/quantumquake.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
