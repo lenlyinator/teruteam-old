@@ -1,13 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: Pusab;
+  src: url("../../fonts/PUSAB___-webfont.ttf");
 }
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 .navbar {
   padding: 0.75rem 16px;
   display: flex;
@@ -33,7 +28,6 @@ body {
   align-items: center;
 }
 .navbar-links a {
-  text-decoration: none;
   padding: 10px;
   color: black;
 }
@@ -48,12 +42,19 @@ body {
   padding: 15px;
   border-radius: 10px;
   transition: 0.5s;
+  transition: 0.4s;
 }
 .navbar-links-join-btn a {
   color: whitesmoke;
   font-size: 17px;
   font-weight: 400px;
   font-family: "Montserrat", sans-serif;
+}
+.navbar-links-join-btn:hover {
+  background: #c1c1c1;
+}
+.navbar-links-join-btn:hover a {
+  color: black;
 }
 
 .slide-welcome-title {
@@ -104,14 +105,24 @@ body {
 }
 
 .section {
-  margin: 4% 5%;
+  margin: 4% 7%;
+}
+.section-content {
+  margin: 4% 0;
 }
 .section-content #content-1 {
   display: flex;
   justify-content: space-around;
 }
 .section-content #content-1-title-header {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+.section-content #content-1-title-header-lvl {
+  padding-bottom: 10px;
+}
+.section-content #content-1-title-header-lvl-name {
+  font-family: "Pusab";
+  font-size: 20px;
 }
 .section-content #content-1-title-btn {
   cursor: pointer;
@@ -133,12 +144,43 @@ body {
 .section-content #content-1-title-btn a {
   padding-right: 7px;
 }
-.section-content #content-1 video {
+.section-content #content-1-title-btn i {
+  color: #fff;
+}
+.section-content #content-1-title-btn:hover {
+  background: #c1c1c1;
+}
+.section-content #content-1-title-btn:hover a {
+  color: black;
+}
+.section-content #content-1-title-btn:hover i {
+  color: black;
+}
+.section-content #content-1-video {
+  background-color: #F3F3F3;
+  width: 500px;
+  height: fit-content;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.section-content #content-1-video video {
   width: 500px;
   border-radius: 0.5rem;
 }
-.section-content #content-1 a {
-  text-decoration: none;
+.section-content #content-1-video-info {
+  padding-bottom: 4px;
+}
+.section-content #content-1-video-info-date {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.section-content #content-1-video:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.section-content:hover {
+  box-sizing: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
