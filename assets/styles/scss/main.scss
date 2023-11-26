@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixin';
 @import 'fonts';
+@import 'animation';
 
 // NAVBAR
 .navbar {
@@ -8,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   nav {
     position: sticky;
   }
@@ -27,7 +28,7 @@
     align-items: center;
     a {
       padding: 10px;
-      color: black;
+      color: white;
     }
     &-tree {
       padding-right: 20px;
@@ -35,14 +36,39 @@
     &-join-btn {
       @include buttonNoDefault();
       @include buttonStyle();
-      transition: .4s;
       &:hover {
-        background: #c1c1c1;
-        a {
-          color: black;
-        }
+        background: $buttonHoverBg;
       }
     }
+  }
+}
+
+// HEADER
+.header {
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  &-content {
+    position: absolute;
+    top: 45%;
+    h1 {
+      font-size: 70px;
+      animation-name: header-h1;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    }
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
   }
 }
 
@@ -104,15 +130,19 @@
 
 // SECTION
 .section {
-  margin: 4% 7%;
+  margin: 8% 7%;
   &-content{
     margin: 4% 0;
     #content-1 {
       display: flex;
       justify-content: space-around;
+      margin-bottom: 7%;
       &-title {
         &-header {
-          padding-bottom: 15px;
+          padding-bottom: 9px;
+          &-text {
+            padding-bottom: 3px;
+          }
           &-lvl {
             padding-bottom: 10px;
             &-name {
@@ -133,13 +163,7 @@
             color: #fff;
           }
           &:hover {
-            background: #c1c1c1;
-            a {
-              color: black;
-            }
-            i {
-              color: black;
-            }
+            background: $buttonHoverBg;
           }
         }
       }
@@ -154,7 +178,7 @@
           border-radius: $mediaBorderRadius;
         }
         &-info {
-          padding-bottom: 4px;
+          padding: 2px 0 6px;
           &-date {
             display: flex;
             justify-content: space-around;
@@ -170,5 +194,43 @@
     &:hover {
       box-sizing: $mediaBoxShadow;
     }
+  }
+  h2 {
+    font-size: 35px;
+  }
+}
+
+// FOOTER
+.footer {
+  user-select: none;
+  background: url('../../imgs/general/footer-bg.png') no-repeat center;
+  background-size: cover;
+  padding: 13px;
+  &-body {
+    padding: 4%;
+    &-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 1%;
+      i {
+        color: #fff;
+        font-size: 60px;
+        padding: 0 12px 0 12px;
+      }
+    }
+  }
+  h5 {
+    text-align: center;
+    color: #fff;
+  }
+  p {
+    padding-top: 8px;
+    text-align: center;
+    color: #fff;
+  }
+  a {
+    text-decoration: underline;
+    color: #fff;
   }
 }
