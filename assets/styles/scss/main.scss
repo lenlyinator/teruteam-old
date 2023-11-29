@@ -3,6 +3,7 @@
 @import 'mixin';
 @import 'fonts';
 @import 'animation';
+@import 'responsive';
 
 // NAVBAR
 .navbar {
@@ -57,6 +58,7 @@
     top: 45%;
     h1 {
       font-size: 70px;
+      text-align: center;
       animation-name: header-h1;
       animation-duration: 8s;
       animation-iteration-count: infinite;
@@ -202,6 +204,7 @@
               img {
                 width: 100px;
                 padding-bottom: 4.5px;
+                pointer-events: none;
               }
               h3 {
                 text-align: center;

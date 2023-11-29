@@ -60,6 +60,11 @@ a {
     color: #fff;
   }
 }
+@media (max-width: 1300px) {
+  .header-content h1 {
+    font-size: 30px !important;
+  }
+}
 .navbar {
   padding: 0.75rem 16px;
   display: flex;
@@ -122,6 +127,7 @@ a {
 }
 .header-content h1 {
   font-size: 70px;
+  text-align: center;
   animation-name: header-h1;
   animation-duration: 8s;
   animation-iteration-count: infinite;
@@ -278,6 +284,7 @@ a {
 .section-content #content-2-title-header-member-child img {
   width: 100px;
   padding-bottom: 4.5px;
+  pointer-events: none;
 }
 .section-content #content-2-title-header-member-child h3 {
   text-align: center;
