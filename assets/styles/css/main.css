@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C1C1C1;
+}
+
 @font-face {
   font-family: Pusab;
   src: url("../../fonts/PUSAB___-webfont.ttf");
@@ -162,10 +184,10 @@
 }
 
 .section {
-  margin: 8% 7%;
+  padding: 8% 0 0 0;
 }
 .section-content {
-  margin: 4% 0;
+  margin: 4% 0 0 0;
 }
 .section-content #content-1 {
   display: flex;
@@ -232,6 +254,46 @@
 }
 .section-content #content-1-video:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.section-content #content-2 {
+  background: url("../../imgs/general/stars-png.png") no-repeat center;
+  background-size: cover;
+  padding: 63.594px 0;
+}
+.section-content #content-2-title {
+  padding: 0 95px;
+}
+.section-content #content-2-title-header {
+  color: #fff;
+}
+.section-content #content-2-title-header-member {
+  padding-top: 8px;
+}
+.section-content #content-2-title-header-member-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+.section-content #content-2-title-header-member-child img {
+  width: 100px;
+  padding-bottom: 4.5px;
+}
+.section-content #content-2-title-header-member-child h3 {
+  text-align: center;
+}
+.section-content #content-2-title-header-member-child a {
+  color: #fff;
+}
+.section-content #content-2-title-header-member-child div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 199px;
+}
+.section-content #content-2-title-header-member-child .card {
+  box-sizing: border-box;
+  height: 150px;
 }
 .section-content:hover {
   box-sizing: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
