@@ -25,46 +25,6 @@ a {
   font-family: Pusab;
   src: url("../../fonts/PUSAB___-webfont.ttf");
 }
-@keyframes header-h1 {
-  0% {
-    color: #fff;
-  }
-  10% {
-    color: #ff9999;
-  }
-  20% {
-    color: #ffcc99;
-  }
-  30% {
-    color: #ffff99;
-  }
-  40% {
-    color: #ccff99;
-  }
-  50% {
-    color: #99ffb3;
-  }
-  60% {
-    color: #99ffe6;
-  }
-  70% {
-    color: #99e6ff;
-  }
-  80% {
-    color: #ff99ff;
-  }
-  90% {
-    color: #ff9999;
-  }
-  100% {
-    color: #fff;
-  }
-}
-@media (max-width: 1300px) {
-  .header-content h1 {
-    font-size: 30px !important;
-  }
-}
 .navbar {
   padding: 0.75rem 16px;
   display: flex;
@@ -341,6 +301,73 @@ a {
 .footer a {
   text-decoration: underline;
   color: #fff;
+}
+
+@media (max-width: 1300px) {
+  .header-content h1 {
+    font-size: 50px;
+  }
+  .slide-news-big {
+    width: 710px;
+    height: 364.375px;
+  }
+  .slide-news-big a {
+    width: 710px;
+    height: 364.375px;
+  }
+  .slide-news-small-1 img {
+    width: 320px;
+  }
+  .slide-news-small-1 a {
+    width: 320px;
+  }
+  .slide-news-small-2 img {
+    width: 320px;
+  }
+  .slide-news-small-2 a {
+    width: 320px;
+  }
+  .slide h1 {
+    font-size: 50px;
+  }
+  .section h2 {
+    font-size: 1.5em;
+  }
+}
+@keyframes header-h1 {
+  0% {
+    color: #fff;
+  }
+  10% {
+    color: #ff9999;
+  }
+  20% {
+    color: #ffcc99;
+  }
+  30% {
+    color: #ffff99;
+  }
+  40% {
+    color: #ccff99;
+  }
+  50% {
+    color: #99ffb3;
+  }
+  60% {
+    color: #99ffe6;
+  }
+  70% {
+    color: #99e6ff;
+  }
+  80% {
+    color: #ff99ff;
+  }
+  90% {
+    color: #ff9999;
+  }
+  100% {
+    color: #fff;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

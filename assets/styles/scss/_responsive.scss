@@ -1,9 +1,51 @@
+//! 1366 x 768
 @media(max-width: 1300px) {
+  // HEADER
   .header {
     &-content {
       h1 {
-        font-size: 30px !important;
+        font-size: 50px;
       }
+    }
+  }
+  // SLIDE
+  .slide {
+    &-news {
+      &-big{
+        width: calc(790px - 80px);
+        height: calc(444.375px - 80px);
+        a {
+          width: calc(790px - 80px);
+          height: calc(444.375px - 80px);
+        }
+      }
+      &-small {
+        &-1 {
+          img {
+            width: calc(390px - 70px);
+          }
+          a {
+            width: calc(390px - 70px);
+          }
+        }
+        &-2 {
+          img {
+            width: calc(390px - 70px);
+          }
+          a {
+            width: calc(390px - 70px);
+          }
+        }
+      }
+    }
+    h1 {
+      font-size: 50px;
+    }
+  }
+  // SECTION
+  .section {
+    h2 {
+      font-size: 1.5em;
     }
   }
 }

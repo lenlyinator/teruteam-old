@@ -2,8 +2,6 @@
 @import 'variables';
 @import 'mixin';
 @import 'fonts';
-@import 'animation';
-@import 'responsive';
 
 // NAVBAR
 .navbar {
@@ -270,3 +268,6 @@
     color: #fff;
   }
 }
+
+@import 'responsive';
+@import 'animation';
